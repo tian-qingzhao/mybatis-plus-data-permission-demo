@@ -1,4 +1,4 @@
-package com.tqz.controller.v1;
+package com.tqz.controller;
 
 
 import com.baomidou.mybatisplus.core.metadata.IPage;
