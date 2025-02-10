@@ -11,7 +11,6 @@ import com.tqz.datapermission.v1.core.rule.DataPermissionRuleFactory;
 import com.tqz.datapermission.v1.core.rule.DataPermissionRuleFactoryImpl;
 import com.tqz.mybatis.interceptor.MybatisLogSqlInterceptor;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,7 +20,7 @@ import java.util.List;
  *
  * @author 芋道源码
  */
-@Configuration
+//@Configuration
 public class YudaoDataPermissionAutoConfiguration {
 
     @Bean

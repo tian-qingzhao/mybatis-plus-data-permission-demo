@@ -7,7 +7,6 @@ import com.tqz.entity.Dept;
 import com.tqz.entity.User;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
 
 /**
  * 数据权限自动配置类.
@@ -15,7 +14,7 @@ import org.springframework.context.annotation.Configuration;
  * @author <a href="https://github.com/tian-qingzhao">tianqingzhao</a>
  * @since 2025/1/24 10:37
  */
-@Configuration
+//@Configuration
 public class DataPermissionAutoConfiguration {
 
     @Bean
