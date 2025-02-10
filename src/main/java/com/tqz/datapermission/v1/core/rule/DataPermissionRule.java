@@ -1,7 +1,7 @@
 package com.tqz.datapermission.v1.core.rule;
 
 import com.baomidou.mybatisplus.core.metadata.TableInfoHelper;
-import com.tqz.entity.BaseDO;
+import com.tqz.datapermission.v1.core.entity.BaseDO;
 import net.sf.jsqlparser.expression.Alias;
 import net.sf.jsqlparser.expression.Expression;
 import net.sf.jsqlparser.expression.NullValue;

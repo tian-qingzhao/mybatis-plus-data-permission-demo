@@ -1,8 +1,7 @@
-package com.tqz.mapper;
+package com.tqz.datapermission.v1.core.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.tqz.entity.Dept;
-import com.tqz.entity.User;
+import com.tqz.datapermission.v1.core.entity.Dept;
 
 /**
  * <p>

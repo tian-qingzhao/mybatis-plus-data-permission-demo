@@ -1,11 +1,9 @@
-package com.tqz.service.impl;
+package com.tqz.datapermission.v1.core.service.impl;
 
-import com.baomidou.mybatisplus.core.metadata.IPage;
-import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.tqz.mapper.UserMapper;
-import com.tqz.entity.User;
-import com.tqz.service.UserService;
+import com.tqz.datapermission.v1.core.mapper.UserMapper;
+import com.tqz.datapermission.v1.core.entity.User;
+import com.tqz.datapermission.v1.core.service.UserService;
 import org.springframework.stereotype.Service;
 
 /**

@@ -2,8 +2,8 @@ package com.tqz.datapermission.v1.config;
 
 import com.tqz.datapermission.v1.core.rule.DeptDataPermissionRuleCustomizerV1;
 import com.tqz.datapermission.v1.core.rule.dept.DeptDataPermissionRuleV1;
-import com.tqz.entity.Dept;
-import com.tqz.entity.User;
+import com.tqz.datapermission.v1.core.entity.Dept;
+import com.tqz.datapermission.v1.core.entity.User;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
 import org.springframework.context.annotation.Bean;
 

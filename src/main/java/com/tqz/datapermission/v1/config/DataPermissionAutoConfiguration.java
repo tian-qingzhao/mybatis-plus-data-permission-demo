@@ -3,8 +3,9 @@ package com.tqz.datapermission.v1.config;
 import com.tqz.datapermission.v1.core.rule.DataPermissionRuleCustomizer;
 import com.tqz.datapermission.v1.core.rule.dept.DeptDataPermissionRule;
 import com.tqz.datapermission.v1.core.rule.user.UserDataPermissionRule;
-import com.tqz.entity.Dept;
-import com.tqz.entity.User;
+import com.tqz.datapermission.v1.core.entity.Dept;
+import com.tqz.datapermission.v1.core.entity.User;
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
 import org.springframework.context.annotation.Bean;
 
@@ -15,6 +16,7 @@ import org.springframework.context.annotation.Bean;
  * @since 2025/1/24 10:37
  */
 //@Configuration
+@MapperScan("com.tqz.datapermission.v1.core.mapper")
 public class DataPermissionAutoConfiguration {
 
     @Bean

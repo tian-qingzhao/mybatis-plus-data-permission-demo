@@ -8,7 +8,7 @@ import com.baomidou.mybatisplus.core.metadata.TableInfoHelper;
 import com.tqz.datapermission.v1.core.dto.DeptDataPermissionRespDTO;
 import com.tqz.datapermission.v1.core.rule.DataPermissionRule;
 import com.tqz.datapermission.v1.core.util.MyBatisUtils;
-import com.tqz.entity.BaseDO;
+import com.tqz.datapermission.v1.core.entity.BaseDO;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import net.sf.jsqlparser.expression.Alias;

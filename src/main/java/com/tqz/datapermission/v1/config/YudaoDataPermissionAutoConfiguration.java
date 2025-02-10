@@ -9,7 +9,6 @@ import com.tqz.datapermission.v1.core.db.DataPermissionRuleHandler;
 import com.tqz.datapermission.v1.core.rule.DataPermissionRule;
 import com.tqz.datapermission.v1.core.rule.DataPermissionRuleFactory;
 import com.tqz.datapermission.v1.core.rule.DataPermissionRuleFactoryImpl;
-import com.tqz.mybatis.interceptor.MybatisLogSqlInterceptor;
 import org.springframework.context.annotation.Bean;
 
 import java.util.ArrayList;
@@ -55,11 +54,6 @@ public class YudaoDataPermissionAutoConfiguration {
     @Bean
     public DataPermissionAnnotationAdvisor dataPermissionAnnotationAdvisor() {
         return new DataPermissionAnnotationAdvisor();
-    }
-
-    @Bean
-    public MybatisLogSqlInterceptor mybatisLogSqlInterceptor() {
-        return new MybatisLogSqlInterceptor();
     }
 
 }

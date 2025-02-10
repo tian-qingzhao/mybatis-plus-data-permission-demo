@@ -3,8 +3,8 @@ package com.tqz.controller;
 
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.tqz.entity.Dept;
-import com.tqz.service.DeptService;
+import com.tqz.datapermission.v1.core.entity.Dept;
+import com.tqz.datapermission.v1.core.service.DeptService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;

@@ -1,9 +1,7 @@
-package com.tqz.service;
+package com.tqz.datapermission.v1.core.service;
 
-import com.baomidou.mybatisplus.core.metadata.IPage;
-import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.tqz.entity.User;
+import com.tqz.datapermission.v1.core.entity.User;
 
 /**
  * <p>

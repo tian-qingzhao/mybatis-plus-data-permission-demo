@@ -1,4 +1,4 @@
-package com.tqz.entity;
+package com.tqz.datapermission.v1.core.entity;
 
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
