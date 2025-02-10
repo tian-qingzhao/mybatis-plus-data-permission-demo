@@ -9,6 +9,7 @@ import com.tqz.datapermission.v1.core.db.DataPermissionRuleHandler;
 import com.tqz.datapermission.v1.core.rule.DataPermissionRule;
 import com.tqz.datapermission.v1.core.rule.DataPermissionRuleFactory;
 import com.tqz.datapermission.v1.core.rule.DataPermissionRuleFactoryImpl;
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.context.annotation.Bean;
 
 import java.util.ArrayList;
@@ -19,7 +20,7 @@ import java.util.List;
  *
  * @author 芋道源码
  */
-//@Configuration
+@MapperScan("com.tqz.datapermission.v1.core.mapper")
 public class YudaoDataPermissionAutoConfiguration {
 
     @Bean

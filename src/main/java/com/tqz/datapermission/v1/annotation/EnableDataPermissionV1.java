@@ -1,7 +1,8 @@
 package com.tqz.datapermission.v1.annotation;
 
-import com.tqz.datapermission.v1.config.DataPermissionAutoConfiguration;
+import com.tqz.datapermission.v1.config.SpringBeanAutoConfigurationV1;
 import com.tqz.datapermission.v1.config.YudaoDataPermissionAutoConfiguration;
+import com.tqz.datapermission.v1.config.YudaoDeptDataPermissionAutoConfiguration;
 import org.springframework.context.annotation.Import;
 
 import java.lang.annotation.*;
@@ -15,6 +16,8 @@ import java.lang.annotation.*;
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
-@Import({DataPermissionAutoConfiguration.class, YudaoDataPermissionAutoConfiguration.class})
+@Import({ SpringBeanAutoConfigurationV1.class,
+        YudaoDataPermissionAutoConfiguration.class,
+       YudaoDeptDataPermissionAutoConfiguration.class})
 public @interface EnableDataPermissionV1 {
 }

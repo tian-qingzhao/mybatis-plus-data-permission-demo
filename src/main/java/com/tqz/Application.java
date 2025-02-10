@@ -1,5 +1,6 @@
 package com.tqz;
 
+import com.tqz.datapermission.v1.annotation.EnableDataPermissionV1;
 import com.tqz.mybatis.interceptor.MybatisLogSqlInterceptor;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -12,7 +13,7 @@ import org.springframework.context.annotation.Bean;
  * @since 2025/1/23 14:39
  */
 @SpringBootApplication
-//@EnableDataPermissionV1
+@EnableDataPermissionV1
 public class Application {
 
     public static void main(String[] args) {

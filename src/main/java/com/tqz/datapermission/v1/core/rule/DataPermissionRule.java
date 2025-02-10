@@ -1,7 +1,6 @@
 package com.tqz.datapermission.v1.core.rule;
 
 import com.baomidou.mybatisplus.core.metadata.TableInfoHelper;
-import com.tqz.datapermission.v1.core.entity.BaseDO;
 import net.sf.jsqlparser.expression.Alias;
 import net.sf.jsqlparser.expression.Expression;
 import net.sf.jsqlparser.expression.NullValue;
@@ -17,21 +16,6 @@ import java.util.Set;
 public interface DataPermissionRule {
 
     Expression EXPRESSION_NULL = new NullValue();
-
-    /**
-     * 添加规则
-     *
-     * @param entityClass 数据库的实体对象类型
-     */
-    void addRule(Class<? extends BaseDO> entityClass);
-
-    /**
-     * 添加规则
-     *
-     * @param entityClass 数据库的实体对象类型
-     * @param columnName  数据库字段名称
-     */
-    void addRule(Class<? extends BaseDO> entityClass, String columnName);
 
     /**
      * 返回需要生效的表名数组

@@ -1,7 +1,7 @@
 package com.tqz.datapermission.v1.config;
 
-import com.tqz.datapermission.v1.core.rule.DeptDataPermissionRuleCustomizerV1;
-import com.tqz.datapermission.v1.core.rule.dept.DeptDataPermissionRuleV1;
+import com.tqz.datapermission.v1.core.rule.DeptDataPermissionRuleCustomizer;
+import com.tqz.datapermission.v1.core.rule.dept.DeptDataPermissionRule;
 import com.tqz.datapermission.v1.core.entity.Dept;
 import com.tqz.datapermission.v1.core.entity.User;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
@@ -14,11 +14,10 @@ import java.util.List;
  *
  * @author 芋道源码
  */
-//@Configuration
-public class YudaoDeptDataPermissionAutoConfigurationV1 {
+public class YudaoDeptDataPermissionAutoConfiguration {
 
     @Bean
-    public DeptDataPermissionRuleCustomizerV1 sysDeptDataPermissionRuleCustomizerV1() {
+    public DeptDataPermissionRuleCustomizer sysDeptDataPermissionRuleCustomizerV1() {
         return rule -> {
             // dept
             rule.addDeptColumn(User.class);
@@ -29,10 +28,10 @@ public class YudaoDeptDataPermissionAutoConfigurationV1 {
     }
 
     @Bean
-    @ConditionalOnBean(value = DeptDataPermissionRuleCustomizerV1.class)
-    public DeptDataPermissionRuleV1 deptDataPermissionRuleV1(List<DeptDataPermissionRuleCustomizerV1> customizers) {
+    @ConditionalOnBean(value = DeptDataPermissionRuleCustomizer.class)
+    public DeptDataPermissionRule deptDataPermissionRuleV1(List<DeptDataPermissionRuleCustomizer> customizers) {
         // 创建 DeptDataPermissionRule 对象
-        DeptDataPermissionRuleV1 rule = new DeptDataPermissionRuleV1();
+        DeptDataPermissionRule rule = new DeptDataPermissionRule();
         // 补全表配置
         customizers.forEach(customizer -> customizer.customize(rule));
         return rule;
