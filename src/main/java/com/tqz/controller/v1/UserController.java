@@ -1,4 +1,4 @@
-package com.tqz.controller;
+package com.tqz.controller.v1;
 
 
 import com.baomidou.mybatisplus.core.metadata.IPage;
@@ -14,8 +14,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-
-import javax.servlet.http.HttpServletRequest;
 
 /**
  * <p>
